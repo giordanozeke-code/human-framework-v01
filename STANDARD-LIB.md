@@ -1,4 +1,4 @@
-content = """# Human Framework — STANDARD-LIB.md
+# Human Framework — STANDARD-LIB.md
 
 This document lists all official keywords and behaviors included in Human Framework v0.1.
 Only these constructs are guaranteed to exist in the language.
@@ -106,10 +106,3 @@ Later versions may add:
 - new action forms
 
 All changes will be appended to this document without breaking existing scripts.
-"""
-
-path = "/mnt/data/STANDARD-LIB.txt"
-with open(path, "w", encoding="utf-8") as f:
-    f.write(content)
-
-path
