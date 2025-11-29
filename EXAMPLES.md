@@ -64,10 +64,3 @@ position inside card top
 when passing -> color darkgrey
 when click -> color red
 Meaning: a card with a title that changes color based on interaction.
-"""
-
-path = "/mnt/data/EXAMPLES.txt"
-with open(path, "w", encoding="utf-8") as f:
-    f.write(content)
-
-path
