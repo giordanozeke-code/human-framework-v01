@@ -1,4 +1,4 @@
-content = """# Human Framework — EXAMPLES.md
+# Human Framework — EXAMPLES.md
 
 This document provides examples showing how to write programs in Human Framework v0.1.
 
