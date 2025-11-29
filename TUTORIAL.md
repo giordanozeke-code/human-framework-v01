@@ -1,5 +1,3 @@
-tutorial = """# Human Framework — TUTORIAL.md
-
 This tutorial introduces Human Framework v0.1 and explains how to write your first programs using the language.  
 It is designed for complete beginners and requires no programming background.
 
@@ -113,9 +111,3 @@ Keep your scripts readable:
 SECTION 10 — Version Note
 This tutorial describes Human Framework v0.1.  
 Future versions may introduce new properties, events, nesting, and richer interactions."""
-
-path = "/mnt/data/TUTORIAL.txt"
-with open(path, "w", encoding="utf-8") as f:
-    f.write(tutorial)
-
-path
