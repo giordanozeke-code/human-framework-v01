@@ -1,9 +1,11 @@
-This tutorial introduces Human Framework v0.1 and explains how to write your first programs using the language.  
+# Human Framework — TUTORIAL.md
+
+This tutorial introduces Human Framework v0.1 and explains how to write your first programs using the language.
 It is designed for complete beginners and requires no programming background.
 
 SECTION 1 — What Human Framework Is
-Human Framework is a human-readable, declarative language meant to describe UI elements and simple logic using natural words.  
-There are no parentheses, no symbols, and no complex structures.  
+Human Framework is a human-readable, declarative language meant to describe UI elements and simple logic using natural words.
+There are no parentheses, no symbols, and no complex structures.
 Everything is expressed through readable keywords.
 
 SECTION 2 — Creating Your First Element
@@ -18,7 +20,7 @@ position top
 Meaning: this defines a simple element named "title" that appears at the top of the layout.
 
 SECTION 3 — Reacting to User Input
-Human Framework enables interaction through events.  
+Human Framework enables interaction through events.
 Every event starts with the keyword "when".
 
 Example:
@@ -95,6 +97,7 @@ Meaning: the card shows a title that reacts to hover and click events.
 
 SECTION 8 — What Happens Internally
 Behind the scenes, Human Framework builds:
+
 - an object tree
 - event bindings
 - reactive behaviors
@@ -103,11 +106,12 @@ The runtime waits for user input and applies property changes whenever events oc
 
 SECTION 9 — Writing Clean Scripts
 Keep your scripts readable:
+
 - one property per line
 - event lines separated from element blocks
 - avoid long names
 - keep behavior simple and clear
 
 SECTION 10 — Version Note
-This tutorial describes Human Framework v0.1.  
-Future versions may introduce new properties, events, nesting, and richer interactions."""
+This tutorial describes Human Framework v0.1.
+Future versions may introduce new properties, events, nesting, and richer interactions.
