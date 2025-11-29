@@ -1,22 +1,22 @@
-# Human Framework v0.1 — Specifica Tecnica
+# Human Framework v0.1 — Technical Specification
 
-Human Framework v0.1 è un linguaggio dichiarativo ad alto livello, basato su sintassi naturale, senza parentesi, progettato per descrivere interfacce e logiche attraverso parole chiave umane.
+Human Framework v0.1 is a high-level declarative language based on natural syntax, without parentheses or symbols. It is designed to describe interfaces and logic using human-readable keywords.
 
-## 1. Parole chiave base
+## 1. Core Keywords
 
-- **create** — definisce un nuovo elemento
-- **name** — assegna un identificatore leggibile
-- **color** — imposta il colore
-- **size** — imposta la dimensione
-- **position** — imposta la posizione
-- **when** — apre un evento
-- **action** — descrive ciò che accade in risposta a un evento
+- **create** — defines a new element
+- **name** — assigns a readable identifier
+- **color** — sets the element’s visual color
+- **size** — sets the element’s size
+- **position** — defines spatial placement
+- **when** — opens an event block
+- **action** — describes what happens in response to an event
 
-## 2. Eventi supportati
+## 2. Supported Events
 
-- **click** — evento attivato da una pressione
-- **press** — pressione continua
-- **passing** — quando il puntatore passa sopra un elemento
-- **enter** — quando si entra in un'area logica o pannello
+- **click** — triggered when the user presses and releases input
+- **press** — triggered continuously while input is held
+- **passing** — triggered when the pointer moves over an element
+- **enter** — triggered when the user enters a logical area or panel
 
-Il resto del linguaggio verrà definito nelle sezioni successive.
+Additional language rules and features will be defined in the following sections.
