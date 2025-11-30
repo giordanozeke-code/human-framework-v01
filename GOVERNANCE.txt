@@ -42,3 +42,16 @@ Contributions aligned with these principles have higher chances of acceptance.
 External contributions strengthen the ecosystem,
 but the identity of the language remains tied to its founder
 and to the official specification in this repository.
+
+9. Decision Process
+All official decisions follow this simple workflow:
+
+1. A proposal is submitted through an Issue or Pull Request.
+2. The proposal is reviewed for:
+   - consistency with the official SPEC,
+   - compatibility with the core syntax principles,
+   - clarity and long-term maintainability.
+3. If approved, the change is added to the official repository.
+4. If rejected, contributors may still develop the idea in a fork or external package.
+
+This keeps the ecosystem open, but ensures that the official version evolves in a controlled and coherent way.
