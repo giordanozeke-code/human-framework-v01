@@ -1,5 +1,5 @@
 # human_backend.py
-# Backend di test per Human Framework v0.1
+# Test backend for Human Framework v0.1
 
 from human_parser import HumanParser
 
@@ -13,7 +13,7 @@ class HumanBackend:
         parser.parse_file(path)
         self.tree = parser.get_tree()
 
-        # inizializza lo stato con le proprietà iniziali degli elementi
+        # initialize state with the initial properties of elements
         for element in self.tree:
             elem_name = element["name"]
             if not elem_name:
@@ -21,8 +21,9 @@ class HumanBackend:
             self.state[elem_name] = element["properties"].copy()
 
     def simulate_event(self, element_name, event_name):
-        """Simula un evento su un elemento e applica la relativa action."""
-        # cerca l'elemento
+        """Simulates an event on an element and applies its action."""
+        
+        # search for the element
         element = None
         for el in self.tree:
             if el["name"] == element_name:
@@ -30,10 +31,10 @@ class HumanBackend:
                 break
 
         if not element:
-            print(f"[ERRORE] Nessun elemento chiamato '{element_name}'")
+            print(f"[ERROR] No element named '{element_name}'")
             return
 
-        # cerca l'evento richiesto
+        # search for the event
         matched_event = None
         for ev in element["events"]:
             if ev["event"] == event_name:
@@ -41,40 +42,40 @@ class HumanBackend:
                 break
 
         if not matched_event:
-            print(f"[INFO] Evento '{event_name}' non definito per '{element_name}'")
+            print(f"[INFO] Event '{event_name}' not defined for '{element_name}'")
             return
 
         action = matched_event["action"]
 
         if not action:
-            print(f"[EVENTO] {event_name} su {element_name} (nessuna action)")
+            print(f"[EVENT] {event_name} on {element_name} (no action defined)")
             return
 
-        # applica l'action
+        # apply the action
         prop = action["property"]
         val = action["value"]
 
         self.state[element_name][prop] = val
 
-        print(f"[EVENTO] {event_name} su {element_name} → {prop} = {val}")
+        print(f"[EVENT] {event_name} on {element_name} → {prop} = {val}")
 
     def print_state(self):
-        print("\n--- STATO ATTUALE ---")
+        print("\n--- CURRENT STATE ---")
         for name, props in self.state.items():
             print(name, "=>", props)
         print("----------------------")
 
 
-# Permette l'esecuzione da terminale:
+# Allow execution from terminal:
 # python human_backend.py file.se
 if __name__ == "__main__":
     import sys
     if len(sys.argv) < 2:
-        print("Uso: python human_backend.py file.se")
+        print("Usage: python human_backend.py file.se")
         sys.exit(0)
 
     backend = HumanBackend()
     backend.load(sys.argv[1])
 
     backend.print_state()
-    print("\nSimulazione completata (usa simulate_event() per test).")
+    print("\nSimulation complete (use simulate_event() for testing).")
