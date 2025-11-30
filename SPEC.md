@@ -16,6 +16,7 @@ Human Framework v0.1 is a high-level declarative language based on natural synta
 
 After `create`, all following keywords belong to the same element
 until another `create` or a `when` statement appears.
+The order of internal keywords is free.
 
 ##  Supported Events
 
