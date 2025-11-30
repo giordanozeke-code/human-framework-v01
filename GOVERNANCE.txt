@@ -3,7 +3,7 @@ Human Framework — Governance Policy v0.1
 1. Project Identity
 Human Framework is a language created by Giordano Tiberi.
 This repository contains the official specification and the reference implementation.
-External projects may extend the ecosystem but do not replace the official version.
+External projects may extend the ecosystem but the official version of Human Framework remains solely the one maintained in this repository
 
 2. Role of the Founder
 The founder defines the direction of the language, maintains the official SPEC,
