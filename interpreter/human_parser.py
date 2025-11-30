@@ -1,5 +1,5 @@
 # human_parser.py
-# Parser v0.1 per Human Framework (.se)
+# Parser v0.1 for Human Framework (.se)
 
 class HumanParser:
     def __init__(self):
@@ -7,7 +7,7 @@ class HumanParser:
         self.current = None
 
     # -----------------------------------------------------------
-    # PUBLIC METHOD — restituisce l'albero degli elementi
+    # PUBLIC METHOD — returns the element tree
     # -----------------------------------------------------------
     def get_tree(self):
         return self.elements
@@ -27,7 +27,7 @@ class HumanParser:
                 continue
             self.parse_line(line)
 
-        # chiude l'ultimo elemento se ancora aperto
+        # close last element if still open
         if self.current:
             self.elements.append(self.current)
             self.current = None
@@ -81,11 +81,11 @@ class HumanParser:
         # CASE 5 — POSITION
         if keyword == "position" and self.current:
             if len(parts) > 1:
-                # position inside card top  → ['inside', 'card', 'top']
+                # position inside card top → ['inside', 'card', 'top']
                 self.current["properties"]["position"] = parts[1:]
             return
 
-        # CASE 6 — WHEN (evento + action)
+        # CASE 6 — WHEN (event + action)
         if keyword == "when" and self.current:
             if len(parts) < 2:
                 return
@@ -97,8 +97,8 @@ class HumanParser:
                 "action": None
             }
 
-            # forma estesa:    when click action color red
-            # forma breve:     when click -> color red   (NON ANCORA SUPPORTATA)
+            # extended form: when click action color red
+            # short form:    when click -> color red (NOT SUPPORTED YET)
             if len(parts) > 2 and parts[2] == "action":
                 if len(parts) >= 5:
                     prop = parts[3]
