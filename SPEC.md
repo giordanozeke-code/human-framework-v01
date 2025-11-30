@@ -12,6 +12,11 @@ Human Framework v0.1 is a high-level declarative language based on natural synta
 - **when** — opens an event block
 - **action** — describes what happens in response to an event
 
+## Element Construction Rules
+
+After `create`, all following keywords belong to the same element
+until another `create` or a `when` statement appears.
+
 ##  Supported Events
 
 - **click** — triggered when the user presses and releases input
