@@ -1,4 +1,4 @@
-# Human Framework — EXAMPLES.md
+# EXAMPLES.md — Human Framework v0.1
 
 This document provides examples showing how to write programs in Human Framework v0.1.
 
@@ -6,23 +6,27 @@ This document provides examples showing how to write programs in Human Framework
 
 ## SECTION 1 — Basic Element
 
+```text
 create
 name button-login
 color blue
 size medium
 position center
+```
 
-Meaning: a blue button named "button-login" centered on screen.
+Meaning: a blue button named “button-login” centered on screen.
 
 ---
 
 ## SECTION 2 — Simple Interaction
 
+```text
 create
 name light
 color white
 
 when click -> color yellow
+```
 
 Meaning: clicking the element turns it yellow.
 
@@ -30,11 +34,13 @@ Meaning: clicking the element turns it yellow.
 
 ## SECTION 3 — Passing Event (hover-like)
 
+```text
 create
 name menu-item
 color grey
 
 when passing -> color white
+```
 
 Meaning: pointer passing over the element changes its color.
 
@@ -42,11 +48,13 @@ Meaning: pointer passing over the element changes its color.
 
 ## SECTION 4 — Enter Event
 
+```text
 create
 name welcome-area
 color dark
 
 when enter -> color light
+```
 
 Meaning: entering this area changes its color.
 
@@ -54,11 +62,13 @@ Meaning: entering this area changes its color.
 
 ## SECTION 5 — Press Event (continuous input)
 
+```text
 create
 name security-button
 color red
 
 when press -> size large
+```
 
 Meaning: pressing enlarges the element.
 
@@ -66,14 +76,16 @@ Meaning: pressing enlarges the element.
 
 ## SECTION 6 — Multiple Events
 
+```text
 create
 name interactive-box
 color grey
 size medium
 
 when passing -> color lightgrey
-when click -> color green
-when press -> size large
+when click   -> color green
+when press   -> size large
+```
 
 Meaning: the element reacts differently to each input.
 
@@ -81,6 +93,7 @@ Meaning: the element reacts differently to each input.
 
 ## SECTION 7 — Mini UI Example
 
+```text
 create
 name card
 color white
@@ -94,7 +107,7 @@ size small
 position inside card top
 
 when passing -> color darkgrey
-when click -> color red
+when click   -> color red
+```
 
 Meaning: a card with a title that changes color based on interaction.
-
