@@ -1,0 +1,44 @@
+Human Framework — Governance Policy v0.1
+
+1. Project Identity
+Human Framework is a language created by Giordano Tiberi.
+This repository contains the official specification and the reference implementation.
+External projects may extend the ecosystem but do not replace the official version.
+
+2. Role of the Founder
+The founder defines the direction of the language, maintains the official SPEC,
+and reviews proposed additions. This keeps the project consistent over time.
+
+3. Community Contributions
+Developers may create tools, libraries, editors, extensions, runtimes,
+and alternative implementations. Contributions can be proposed through issues
+or pull requests. Accepted contributions are merged into the official repository.
+
+4. Forks and Variants
+Forks are allowed under the MIT license. Forks should use a different name
+to avoid confusion and must state that they are derived from Human Framework.
+The reference version remains in this repository.
+
+5. External Projects
+Third-party tools or commercial products can be built on top of Human Framework.
+These remain the property of their creators and do not become the official version
+unless explicitly approved.
+
+6. Evolution of the Language
+The language may grow with new features or tools over time.
+Changes to the SPEC occur gradually and only after careful review
+to maintain clarity and compatibility.
+
+7. Guiding Principles
+All official decisions follow these principles:
+human-readable syntax,
+natural structure,
+simplicity,
+deterministic behavior,
+accessibility for beginners.
+Contributions aligned with these principles have higher chances of acceptance.
+
+8. Community and Recognition
+External contributions strengthen the ecosystem,
+but the identity of the language remains tied to its founder
+and to the official specification in this repository.
