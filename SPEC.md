@@ -2,7 +2,7 @@
 
 Human Framework v0.1 is a high-level declarative language based on natural syntax, without parentheses or symbols. It is designed to describe interfaces and logic using human-readable keywords.
 
-## 1. Core Keywords
+##  Core Keywords
 
 - **create** — defines a new element
 - **name** — assigns a readable identifier
@@ -12,11 +12,13 @@ Human Framework v0.1 is a high-level declarative language based on natural synta
 - **when** — opens an event block
 - **action** — describes what happens in response to an event
 
-## 2. Supported Events
+##  Supported Events
 
 - **click** — triggered when the user presses and releases input
 - **press** — triggered continuously while input is held
 - **passing** — triggered when the pointer moves over an element
 - **enter** — triggered when the user enters a logical area or panel
+
+## SECTION X — Import Rules
 
 Additional language rules and features will be defined in the following sections.
