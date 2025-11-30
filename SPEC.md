@@ -12,6 +12,8 @@ Human Framework v0.1 is a high-level declarative language based on natural synta
 - **when** — opens an event block
 - **action** — describes what happens in response to an event
 
+Note: the keyword `action` has no functional role in v0.1; it is a purely visual-semantic indicator used to make event lines more readable. It does not change interpretation, execution, or behavior.
+
 ## Element Construction Rules
 
 After `create`, all following keywords belong to the same element
