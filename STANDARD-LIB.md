@@ -1,6 +1,6 @@
 # Human Framework — STANDARD-LIB.md
 
-This document lists all official keywords and behaviors included in Human Framework v0.1.
+This document lists all official keywords and behaviors included in Human Framework v0.2.
 Only these constructs are guaranteed to exist in the language.
 Future versions may extend the standard library but will not break the behavior defined here.
 
