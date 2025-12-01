@@ -13,8 +13,6 @@ Human Framework v0.2 is a high-level declarative language based on natural synta
 - **action** — attaches a concrete action to an event. Actions trigger backend logic (e.g. print output, apply color, etc.).
 - **print** - outputs a value during program execution
 
-Note: the keyword `action` has no functional role in v0.1; it is a purely visual-semantic indicator used to make event lines more readable. It does       not change interpretation, execution, or behavior.
-
 Note: when (global) — allows defining events not bound to a specific element. Global events run at program start or when the environment triggers         them.
 
 ## Action 
