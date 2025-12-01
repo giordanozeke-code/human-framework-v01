@@ -6,99 +6,92 @@ Future versions may extend the standard library but will not break the behavior 
 
 SECTION 1 — Element Creation Keywords
 
-create
+**create**
 Creates a new UI element. It begins a new element block.
 
-name
+**name**
 Assigns a readable identifier to the element.
 Names should be unique inside the same logical scope.
 
-color
+**color**
 Sets the visual color of the element.
-Accepted values in v0.1: white, black, grey, lightgrey, dark, red, yellow, blue, green.
 Future versions may extend the color set.
 
-size
+**size**
 Sets the general dimension of the element.
-Accepted values in v0.1: small, medium, large.
 
-position
+**position**
 Defines the placement of the element.
-Accepted values in v0.1: center, top, bottom, left, right, inside (with a target element and optional anchor such as top or bottom).
+
 Examples:
 position center
 position inside card top
 
-SECTION 2 — Events
+##SECTION 2 — Events
 
-Human Framework v0.1 supports four event types.
+Human Framework v0.2 supports five event types.
 
-click
+**click**
 Triggered when the user presses and releases on the element.
 
-press
+**press**
 Triggered continuously while the user holds an input (for example a mouse button or key).
 
-passing
+**passing**
 Triggered while the pointer stays inside the element’s region.
 Behaves like a hover-style interaction.
 
-enter
+**enter**
 Triggered when the user enters a logical area or panel.
 It fires on entry, not continuously.
 
-SECTION 3 — Action Syntax
+**run**
+global event executed at program start.
+It can only be defined inside the _global element.
 
-Human Framework v0.1 uses a compact event to action syntax.
+##Section 3 - Action
+**color** -applies a color to an element
+**print** -outputs a value during execution
 
-The short form is:
+##SECTION 4 — Action Syntax
 
-when EVENT -> PROPERTY VALUE
+Human Framework v0.2 uses a compact event to action syntax:
 
-For example:
-when click -> color red
+-when EVENT action PROPERTY VALUE
 
-The expanded form is:
 
-when EVENT
-    action PROPERTY VALUE
-
-For example:
-when click
-    action color red
-
-Both forms are equivalent in v0.1.
-
-SECTION 4 — Properties Supported in v0.1
+SECTION 5 — Properties Supported in v0.2
 
 The following properties are officially supported:
 
-name      — logical identifier of the element
-color     — visual color from the standard color set
-size      — small, medium, large
-position  — spatial placement relative to the layout or another element
+**name**      — logical identifier of the element
+**color**     — visual color from the standard color set
+**size**      — small, medium, large
+**position**  — spatial placement relative to the layout or another element
 
 Any other property name is ignored by the runtime in v0.1 but may become valid in future versions.
 
-SECTION 5 — Reserved Words
+SECTION 6 — Reserved Words
 
-The following words are reserved by Human Framework v0.1 and should not be used as names:
+The following words are reserved by Human Framework v0.2 and should not be used as names:
 
-create
-name
-color
-size
-position
-when
-action
-click
-press
-passing
-enter
+**create**
+**name**
+**color**
+**size**
+**position**
+**when**
+**action**
+**click**
+**press**
+**passing**
+**enter**
+**run**
+**print**
 
-SECTION 6 — Version Note
+##SECTION 7 — Version Note
 
-This standard library definition applies to Human Framework v0.1.
+This standard library definition applies to Human Framework v0.2.
 Later versions may add:
 - new properties
 - new events
