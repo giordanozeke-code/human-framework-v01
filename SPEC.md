@@ -20,13 +20,22 @@ Note: when (global) — allows defining events not bound to a specific element. 
 - **color Value** - Sets the color property of the active element. Errors if no active element exists.
 - **print Value** - Outputs Value during program execution. Can be used globally (e.g., When run action print hello)
 
+ Syntax:
+    action PROPERTY VALUE
+
+Examples:
+    when click action color red
+    when run action print hello
+
 ## Element Construction Rules
 
 After `create`, all following keywords belong to the same element
 until another `create` or a `when` statement appears.
 The order of internal keywords is free.
 
-## Special Element: _global
+## Global Event Rules
+
+# Special Element: _global
 
 The parser automatically creates a special element named `_global`.
 All `when` statements defined outside any `create` block are attached to `_global`.
@@ -41,16 +50,26 @@ A when placed outside an element is considered global and is assigned to the spe
 - **passing** — triggered when the pointer moves over an element
 - **enter** — triggered when the user enters a logical area or panel
 - **run** - global event executed at program start.
-- Note: `run` can only be defined in the `_global` element.It is executed automatically when the program starts, before any element-related events.
 
-## SECTION X — Import Rules
+- Note: `run` can only be defined in the `_global` element.It is executed automatically when the program starts, before any element-related events.
 
 ## Error Rules
 Human Framework detects the following errors:
 
-• Missing active element — using `color` or other property keywords outside of a `create` block raises an error.
-• Unknown keywords — silently ignored for forward compatibility.
-• Missing action target — actions referring to non-existent elements raise backend errors.
+- Missing active element — using color or other property keywords outside of a create block raises an error.
+- Unknown keywords — silently ignored for forward compatibility.
+- Missing action target — actions referring to non-existent elements raise backend errors.
+
+
+## Internal Architecture Overview
+
+#Human Framework v0.2 is composed of three core components:
+
+-Parser — reads .sc files and builds the element tree.
+-Registry — automatically loads keywords, events, and actions as modular handlers.
+-Backend — executes events and actions and maintains the program state.
+
 
 
 Additional language rules and features will be defined in the following sections.
+
