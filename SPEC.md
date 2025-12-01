@@ -43,6 +43,7 @@ A when placed outside an element is considered global and is assigned to the spe
 - **passing** — triggered when the pointer moves over an element
 - **enter** — triggered when the user enters a logical area or panel
 - **run** - global event executed at program start.
+- Note: `run` can only be defined in the `_global` element.It is executed automatically when the program starts, before any element-related events.
 
 ## SECTION X — Import Rules
 
