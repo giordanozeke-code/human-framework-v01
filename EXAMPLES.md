@@ -1,4 +1,4 @@
-EXAMPLES.txt — Human Framework v0.1
+EXAMPLES.txt — Human Framework v0.2
 
 This document provides examples showing how to write programs in Human Framework v0.1.
 
@@ -9,7 +9,7 @@ SECTION 1 — Basic Element
 
 create
 name button-login
-color blue
+color red
 size medium
 position center
 
@@ -24,7 +24,7 @@ create
 name light
 color white
 
-when click -> color yellow
+when click action color yellow
 
 Meaning: clicking the element turns it yellow.
 
@@ -37,7 +37,7 @@ create
 name menu-item
 color grey
 
-when passing -> color white
+when passing action color white
 
 Meaning: pointer passing over the element changes its color.
 
@@ -50,7 +50,7 @@ create
 name welcome-area
 color dark
 
-when enter -> color light
+when enter action color light
 
 Meaning: entering this area changes its color.
 
@@ -63,7 +63,7 @@ create
 name security-button
 color red
 
-when press -> size large
+when press action size large
 
 Meaning: pressing enlarges the element.
 
@@ -77,9 +77,9 @@ name interactive-box
 color grey
 size medium
 
-when passing -> color lightgrey
-when click   -> color green
-when press   -> size large
+when passing action color lightgrey
+when click action color green
+when press action size large
 
 Meaning: the element reacts differently to each input.
 
@@ -100,7 +100,7 @@ color black
 size small
 position inside card top
 
-when passing -> color darkgrey
-when click   -> color red
+when passing action color darkgrey
+when click action color red
 
 Meaning: a card with a title that changes color based on interaction.
