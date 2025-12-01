@@ -75,19 +75,19 @@ SECTION 6 — Reserved Words
 
 The following words are reserved by Human Framework v0.2 and should not be used as names:
 
-**create**
-**name**
-**color**
-**size**
-**position**
-**when**
-**action**
-**click**
-**press**
-**passing**
-**enter**
-**run**
-**print**
+-**create**
+-**name**
+-**color**
+-**size**
+-**position**
+-**when**
+-**action**
+-**click**
+-**press**
+-**passing**
+-**enter**
+-**run**
+-**print**
 
 ##SECTION 7 — Version Note
 
