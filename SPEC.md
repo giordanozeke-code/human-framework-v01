@@ -63,7 +63,7 @@ Human Framework detects the following errors:
 
 ## Internal Architecture Overview
 
-#Human Framework v0.2 is composed of three core components:
+Human Framework v0.2 is composed of three core components:
 
 -Parser — reads .sc files and builds the element tree.
 -Registry — automatically loads keywords, events, and actions as modular handlers.
