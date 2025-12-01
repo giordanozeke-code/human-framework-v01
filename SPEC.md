@@ -1,6 +1,6 @@
 # Human Framework v0.2 — Technical Specification
 
-Human Framework v0.1 is a high-level declarative language based on natural syntax, without parentheses or symbols. It is designed to describe interfaces and logic using human-readable keywords.
+Human Framework v0.2 is a high-level declarative language based on natural syntax, without parentheses or symbols. It is designed to describe interfaces and logic using human-readable keywords.
 
 ##  Core Keywords
 
