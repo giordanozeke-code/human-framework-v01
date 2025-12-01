@@ -47,7 +47,7 @@ Human Framework v0.2 supports five event types.
 
 **run**
 -global event executed at program start.
- It can only be defined inside the _global element.
+  It can only be defined inside the _global element.
 
 ##Section 3 - Action
 **color** -applies a color to an element
